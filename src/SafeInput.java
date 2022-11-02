@@ -2,12 +2,6 @@ import java.util.Scanner;
 
 public class SafeInput
 {
-    /**
-     * Gets a response from user
-     * @param pipe a Scanner opened to read from System.in
-     * @param prompt prompt for the user
-     * @return a String response that is not zero length
-     */
     public static String getNonZeroLenString(Scanner pipe, String prompt)
     {
         String retString = "";  // Set this to zero length. Loop runs until it isn’t
@@ -21,12 +15,6 @@ public class SafeInput
 
     }
 
-    /**
-     * Gets an integer from user
-     * @param pipe - gets input
-     * @param prompt - prompts for integer
-     * @return - returns integer
-     */
     public static int getInt(Scanner pipe, String prompt)
     {
         int retInteger = 0;
@@ -54,12 +42,7 @@ public class SafeInput
         return retInteger;
     }
 
-    /**
-     * gets a double from user
-     * @param pipe - gets input
-     * @param prompt - prompts for double
-     * @return - returns double
-     */
+
     public static double getDouble(Scanner pipe, String prompt)
     {
         double retDouble = 0;
@@ -87,14 +70,6 @@ public class SafeInput
         return retDouble;
     }
 
-    /**
-     * gets a ranged integer from user
-     * @param pipe - user input
-     * @param prompt - prompt for input
-     * @param low - low end of range
-     * @param high - high end of range
-     * @return
-     */
     public static int getRangedInt(Scanner pipe, String prompt, int low, int high)
     {
         int retInt = 0;
@@ -128,15 +103,6 @@ public class SafeInput
 
         return retInt;
     }
-
-    /**
-     * Gets a ranged double from user
-     * @param pipe - user input
-     * @param prompt - prompt for input
-     * @param low - low end of range
-     * @param high - high end of range
-     * @return - returns ranged double
-     */
 
     public static double getRangedDouble(Scanner pipe, String prompt, double low, double high)
     {
@@ -200,13 +166,6 @@ public class SafeInput
         return retYN;
     }
 
-    /**
-     *
-     * @param pipe
-     * @param prompt
-     * @param regEx
-     * @return
-     */
 
     public static String getRegExString(Scanner pipe, String prompt, String regEx)
     {
